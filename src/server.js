@@ -16,6 +16,7 @@ app.use(bookRouter);
 const syncTables = async () => {
   await Book.sync();
 };
+app.use(expres.json());
 
 app.get("/health", (req, res) => {
   console.log("hello");
