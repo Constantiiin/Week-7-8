@@ -1,6 +1,8 @@
 require("dotenv").config();
 const express = require("express");
 
+const dbConnect = require("./db/dbConnect.js");
+
 const Book = require("./books/model");
 
 const bookRouter = require("./books/routes");
